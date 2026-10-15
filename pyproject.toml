@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sam2-fixed-reference-prompts"
+version = "0.1.0"
+description = "Reference mask-derived fixed spatial prompts for frozen SAM2 inference"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10", "opencv-python-headless>=4.8"]
+
+[project.optional-dependencies]
+inference = ["torch>=2.5.1"]
+
+[project.scripts]
+sam2-fixed = "sam2_fixed.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["sam2_fixed*"]
