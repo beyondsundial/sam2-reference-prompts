@@ -1,0 +1,20 @@
+{
+  "model": {
+    "config": "configs/sam2.1/sam2.1_hiera_t.yaml",
+    "checkpoint": "../../../models/sam2.1_hiera_tiny.pt",
+    "device": "cpu",
+    "precision": "float32"
+  },
+  "targets": [
+    {
+      "name": "circle",
+      "prompts": "circle.prompts.json",
+      "min_score": 0.0
+    },
+    {
+      "name": "square",
+      "prompts": "square.prompts.json",
+      "min_score": 0.0
+    }
+  ]
+}

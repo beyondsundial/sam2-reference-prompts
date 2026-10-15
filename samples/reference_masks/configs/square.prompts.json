@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "mode": "fixed_pixel_coordinates",
+  "target": "square",
+  "image_size": {
+    "width": 1408,
+    "height": 768
+  },
+  "point_coords": [
+    [
+      988,
+      386
+    ],
+    [
+      420,
+      384
+    ]
+  ],
+  "point_labels": [
+    1,
+    0
+  ],
+  "sampling": {
+    "points_per_component": 1,
+    "min_area": 1,
+    "boundary_margin": 2.0,
+    "min_spacing": 12.0
+  },
+  "sources": [
+    {
+      "kind": "positive",
+      "image": "/Users/beyond/code/codex/Work/sam2-reference-prompts/samples/reference_masks/positive/square/image.png",
+      "mask": "/Users/beyond/code/codex/Work/sam2-reference-prompts/samples/reference_masks/positive/square/mask.png",
+      "image_sha256": "164a4a98f91c037105b1547a6f0ee9323af1a529b8a52842b2870a694b296041",
+      "mask_sha256": "c008998cffa086da3bdd966f8f28c7cab07e5f61c1735f88ab80500118b54f27"
+    },
+    {
+      "kind": "negative",
+      "image": "/Users/beyond/code/codex/Work/sam2-reference-prompts/samples/reference_masks/negative/ellipse/image.png",
+      "mask": "/Users/beyond/code/codex/Work/sam2-reference-prompts/samples/reference_masks/negative/ellipse/mask.png",
+      "image_sha256": "164a4a98f91c037105b1547a6f0ee9323af1a529b8a52842b2870a694b296041",
+      "mask_sha256": "2c9af93fe42679d0c5b46dfffd9571547bb771d943a79f253df34af812414a0e"
+    }
+  ],
+  "aggregation": "positive_intersection; negative_union_excluding_positive_union",
+  "negative_overlap_pixels_removed": 0,
+  "max_points": 64,
+  "prompt_id": "5da59aced1564ee1113981f8f813577c4438c36ed0491e1630da0a18c2c53c6c",
+  "created_at_utc": "2026-10-15T11:39:28.019489+00:00"
+}
