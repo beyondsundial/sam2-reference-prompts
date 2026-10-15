@@ -1,0 +1,14 @@
+name: engineering-tests
+on: [push, pull_request]
+jobs:
+  cpu-contract-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --index-url https://download.pytorch.org/whl/cpu torch
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      # 不在 CI 中自动下载权重；真实 SAM2 集成测试在有权重的环境另行启用。

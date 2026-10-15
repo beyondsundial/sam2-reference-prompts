@@ -1,0 +1,39 @@
+test_build_and_preview_cli_roundtrip (test_engineering.ArtifactTests.test_build_and_preview_cli_roundtrip) ... ok
+test_empty_and_colored_masks_fail (test_engineering.ArtifactTests.test_empty_and_colored_masks_fail) ... ok
+test_empty_mask_is_allowed_only_when_explicit (test_engineering.ArtifactTests.test_empty_mask_is_allowed_only_when_explicit) ... ok
+test_fully_conflicting_negative_fails (test_engineering.ArtifactTests.test_fully_conflicting_negative_fails) ... ok
+test_mask_image_size_mismatch_fails (test_engineering.ArtifactTests.test_mask_image_size_mismatch_fails) ... ok
+test_negative_points_never_hit_any_positive_reference_region (test_engineering.ArtifactTests.test_negative_points_never_hit_any_positive_reference_region) ... ok
+test_no_common_positive_region_fails (test_engineering.ArtifactTests.test_no_common_positive_region_fails) ... ok
+test_palette_indices_do_not_invert_white_foreground (test_engineering.ArtifactTests.test_palette_indices_do_not_invert_white_foreground) ... ok
+test_point_budget_fails_instead_of_silent_truncation (test_engineering.ArtifactTests.test_point_budget_fails_instead_of_silent_truncation) ... ok
+test_positive_points_come_from_stable_intersection (test_engineering.ArtifactTests.test_positive_points_come_from_stable_intersection) ... ok
+test_revision_is_stable_and_detects_edits (test_engineering.ArtifactTests.test_revision_is_stable_and_detects_edits) ... ok
+test_rgb_and_rgba_black_white_masks_match_grayscale (test_engineering.ArtifactTests.test_rgb_and_rgba_black_white_masks_match_grayscale) ... ok
+test_transparent_white_pixels_are_background (test_engineering.ArtifactTests.test_transparent_white_pixels_are_background) ... ok
+test_batch_isolates_bad_image_and_reports_rejections (test_engineering.FrozenAndPipelineTests.test_batch_isolates_bad_image_and_reports_rejections) ... ok
+test_eval_no_grad_and_parameters_unchanged (test_engineering.FrozenAndPipelineTests.test_eval_no_grad_and_parameters_unchanged) ... ok
+test_failed_prepare_clears_previous_image_state (test_engineering.FrozenAndPipelineTests.test_failed_prepare_clears_previous_image_state) ... ok
+test_prepare_is_required_and_embedding_can_be_reused (test_engineering.FrozenAndPipelineTests.test_prepare_is_required_and_embedding_can_be_reused) ... ok
+test_empty_pair_and_shape_mismatch (test_engineering.MetricsTests.test_empty_pair_and_shape_mismatch) ... ok
+test_iou_dice_known_overlap (test_engineering.MetricsTests.test_iou_dice_known_overlap) ... ok
+test_latency_count_and_percentiles (test_engineering.MetricsTests.test_latency_count_and_percentiles) ... ok
+test_actual_model_freeze_and_prediction (test_engineering.RealSAM2SmokeTest.test_actual_model_freeze_and_prediction) ... /Users/beyond/code/codex/Work/sam2-reference-prompts/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+ok
+test_each_component_gets_a_point_and_noise_can_be_filtered (test_engineering.SamplingTests.test_each_component_gets_a_point_and_noise_can_be_filtered) ... ok
+test_full_image_has_valid_boundary_distance (test_engineering.SamplingTests.test_full_image_has_valid_boundary_distance) ... ok
+test_invalid_sampling_parameters_fail (test_engineering.SamplingTests.test_invalid_sampling_parameters_fail) ... ok
+test_ring_point_stays_on_ring_not_center (test_engineering.SamplingTests.test_ring_point_stays_on_ring_not_center) ... ok
+test_thin_mask_requires_explicit_lower_margin (test_engineering.SamplingTests.test_thin_mask_requires_explicit_lower_margin) ... ok
+test_bad_coordinates_and_labels_fail (test_engineering.ValidationTests.test_bad_coordinates_and_labels_fail) ... ok
+test_higher_scored_invalid_candidate_is_rejected (test_engineering.ValidationTests.test_higher_scored_invalid_candidate_is_rejected) ... ok
+test_no_valid_candidate_does_not_force_output (test_engineering.ValidationTests.test_no_valid_candidate_does_not_force_output) ... ok
+test_nonfinite_score_and_quality_threshold_reject (test_engineering.ValidationTests.test_nonfinite_score_and_quality_threshold_reject) ... ok
+test_wrong_size_is_never_rescaled (test_engineering.ValidationTests.test_wrong_size_is_never_rescaled) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 3.567s
+
+OK
+已生成 2 个提示点: /var/folders/pt/_8869d916zq62yyn2c3y_4v80000gn/T/tmpxr0szr20/prompts.json

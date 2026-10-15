@@ -1,0 +1,15 @@
+{
+  "target": "circle",
+  "positive": [
+    {
+      "image": "../positive/circle/image.png",
+      "mask": "../positive/circle/mask.png"
+    }
+  ],
+  "negative": [
+    {
+      "image": "../negative/ellipse/image.png",
+      "mask": "../negative/ellipse/mask.png"
+    }
+  ]
+}

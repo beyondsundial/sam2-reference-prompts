@@ -1,0 +1,71 @@
+{
+  "core_source_unchanged_during_audit": true,
+  "active_entry": "python -m sam2_fixed build -> python -m sam2_fixed run",
+  "active_inference_uses_reference_image_features": false,
+  "actual_method": "reference masks -> fixed spatial point prompts -> frozen SAM2 prediction",
+  "legacy_demo_script": "/Users/beyond/code/codex/Work/sam2-reference-prompts/outputs/three-shapes-20261015/segment_image.py",
+  "legacy_findings": [
+    "hardcoded image dimensions",
+    "hardcoded object names and point coordinates",
+    "connected-component filtering rewrites predicted mask"
+  ],
+  "legacy_script_in_current_source_archive": false,
+  "active_results": [
+    {
+      "target": "circle",
+      "prompts_rebuilt_from_samples_match": true,
+      "direct_model_output_matches_saved_mask": true,
+      "point_coords": [
+        [
+          726,
+          383
+        ],
+        [
+          420,
+          384
+        ]
+      ],
+      "point_labels": [
+        1,
+        0
+      ],
+      "sample_roles": [
+        "positive",
+        "negative"
+      ]
+    },
+    {
+      "target": "square",
+      "prompts_rebuilt_from_samples_match": true,
+      "direct_model_output_matches_saved_mask": true,
+      "point_coords": [
+        [
+          988,
+          386
+        ],
+        [
+          420,
+          384
+        ]
+      ],
+      "point_labels": [
+        1,
+        0
+      ],
+      "sample_roles": [
+        "positive",
+        "negative"
+      ]
+    }
+  ],
+  "sample_annotation_origin": "previous model outputs used as demonstration reference, not independent ground truth",
+  "core_sha256": {
+    "sam2_fixed/__init__.py": "45c9e29446f42a1cf05f33ddcb976d34fd3b0b97838d2f59c72af94cf5cafd84",
+    "sam2_fixed/__main__.py": "8496345b82f9bf674a0a76f410859df9fa8c83e1a03b84b4e0f1e7430bfbca3a",
+    "sam2_fixed/artifacts.py": "b762518fe7f326e0c017efd436b07e241f0af3211f68ae1c9a9763d9447d03f4",
+    "sam2_fixed/evaluation.py": "8f3d3c4a3812ba430826707c463de6a3549a27e2e149e61a2e7317bb91d85572",
+    "sam2_fixed/pipeline.py": "09a7ae3a255c6f6e75e09580086d30ea44fc6d0da55a162a28bc67eff4e6a7b4",
+    "sam2_fixed/prompts.py": "dcbe69f69138dc611a9737eb3f69d69783b2fe9a307c3b5edc28061af648a1a3",
+    "sam2_fixed/runner.py": "fa7670005b77c9001709caf93f547fc2c594df855cd69d31055732fde926c736"
+  }
+}

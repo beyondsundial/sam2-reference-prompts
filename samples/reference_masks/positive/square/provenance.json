@@ -1,0 +1,10 @@
+{
+  "mask_source": "previous_model_prediction_used_as_demo_reference",
+  "source_path": "/Users/beyond/code/codex/Work/sam2-reference-prompts/outputs/three-shapes-20261015/results-4_iih5uz/0000/orange_square.mask.png",
+  "source_sha256": "c008998cffa086da3bdd966f8f28c7cab07e5f61c1735f88ab80500118b54f27",
+  "independent_ground_truth": false,
+  "note": "完整轮廓演示参考；正式项目可替换为人工确认且与原图同坐标系的标注。",
+  "historical_source_removed_during_cleanup": true,
+  "current_mask_path": "/Users/beyond/code/codex/Work/sam2-reference-prompts/samples/reference_masks/positive/square/mask.png",
+  "current_mask_sha256": "c008998cffa086da3bdd966f8f28c7cab07e5f61c1735f88ab80500118b54f27"
+}
