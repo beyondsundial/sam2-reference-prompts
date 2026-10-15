@@ -1,0 +1,36 @@
+{
+  "removed": [
+    "outputs/dual-mask-export-20261015",
+    "outputs/live-demo-20261015-qhw9yv9s",
+    "outputs/real-cpu-tiny",
+    "outputs/sample-folder-blue-negative-20261015",
+    "outputs/three-shapes-20261015",
+    "examples",
+    "tools",
+    ".DS_Store",
+    "samples/.DS_Store",
+    "samples/reference_masks/.DS_Store",
+    "samples/reference_masks/positive/.DS_Store",
+    "samples/reference_masks/negative/.DS_Store",
+    "sam2_fixed/__pycache__",
+    "tests/__pycache__"
+  ],
+  "removed_bytes": 32848058,
+  "kept_results": "/Users/beyond/code/codex/Work/sam2-reference-prompts/outputs/latest",
+  "core_code_unchanged": true,
+  "preserved": [
+    "sam2_fixed",
+    "tests",
+    "samples/reference_masks",
+    "models",
+    ".venv",
+    ".github",
+    "evidence",
+    "README.md",
+    "INTERVIEW.md",
+    "VALIDATION.md",
+    "requirements.txt",
+    "requirements-tested-macos.txt",
+    "pyproject.toml"
+  ]
+}
